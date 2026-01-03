@@ -4,6 +4,6 @@ public class Car {
   private PetrolEngine petrolEngine = new PetrolEngine();
 
   public void start() {
-    petrolEngine.start();
+    petrolEngine.ignite();
   }
 }
