@@ -1,9 +1,13 @@
 package local.fruitloop.spring_basics.service.car;
 
 public class Car {
-  private PetrolEngine petrolEngine = new PetrolEngine();
+  private final Engine engine;
+
+  public Car(Engine engine) {
+    this.engine = engine;
+  }
 
   public void start() {
-    petrolEngine.ignite();
+    this.engine.start();
   }
 }

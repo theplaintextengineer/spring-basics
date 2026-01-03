@@ -1,7 +1,8 @@
 package local.fruitloop.spring_basics.service.car;
 
-public class ElectricEngine{
-  public void applyVoltage(){
+public class ElectricEngine implements Engine {
+  @Override
+  public void start() {
     System.out.println("Car is using electric engine.");
   }
 }
